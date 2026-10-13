@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-label="Stylized modern residence illustration">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c8d9d4"/><stop offset="1" stop-color="#ecdfc8"/></linearGradient><linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9f6ed"/><stop offset="1" stop-color="#c7c6b6"/></linearGradient><linearGradient id="window" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#668687"/><stop offset="1" stop-color="#263f42"/></linearGradient></defs>
+<rect width="1200" height="820" fill="url(#sky)"/><circle cx="983" cy="135" r="83" fill="#efe9d5" opacity=".8"/>
+<path d="M0 600 Q250 550 480 600 T1200 600 L1200 820 L0 820Z" fill="#a1ac91"/>
+<path d="M80 588 L80 294 L420 220 L1120 298 L1120 600Z" fill="#aaa797"/>
+<path d="M120 311 L492 237 L1118 300 L1090 342 L482 294 L120 364Z" fill="#304e4a"/>
+<path d="M180 360 L490 303 L490 604 L180 611Z" fill="url(#wall)"/>
+<path d="M490 303 L1052 338 L1052 610 L490 604Z" fill="#e4dfd1"/>
+<path d="M220 395 L444 353 L444 573 L220 579Z" fill="url(#window)"/>
+<path d="M534 365 L765 378 L765 564 L534 560Z" fill="url(#window)"/>
+<path d="M797 378 L1012 391 L1012 568 L797 564Z" fill="url(#window)"/>
+<g stroke="#e9e3cf" stroke-width="8"><path d="M330 376 L330 579 M534 470 L765 471 M648 372 L648 564 M907 386 L907 565"/></g>
+<path d="M0 641 L1200 630 L1200 820 L0 820Z" fill="#e3d4b6"/>
+<path d="M0 684 L1200 663 L1200 820 L0 820Z" fill="#89a8a4"/>
+<path d="M0 715 Q310 735 660 712 T1200 717" stroke="#e9f0e5" stroke-width="8" fill="none" opacity=".35"/>
+<path d="M0 620 Q42 527 71 447 Q116 529 133 626Z" fill="#4a6d5c"/>
+<path d="M1073 613 Q1114 485 1152 398 Q1180 493 1200 612Z" fill="#3c6557"/>
+<path d="M80 634 Q88 544 96 465" fill="none" stroke="#3b6357" stroke-width="7"/>
+<rect y="780" width="1200" height="40" fill="#d8ccb0" opacity=".4"/>
+</svg>
