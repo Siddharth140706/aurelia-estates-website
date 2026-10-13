@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17332e">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Aurelia Estates is a fictional luxury real estate website concept showcasing beautiful properties, curated experiences and an elegant property search.">
+  <meta property="og:title" content="Aurelia Estates | Places for a life well lived">
+  <meta property="og:description" content="An editorial real estate website concept with curated sample homes.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Aurelia Estates (portfolio concept)">
+  <meta name="twitter:card" content="summary">
+  <title>Aurelia Estates | Places for a life well lived</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" media="(min-width:701px)" fetchpriority="high">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" media="(max-width:700px)" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="demo-strip"><span class="demo-dot" aria-hidden="true"></span> PORTFOLIO CONCEPT · Fictional agency &amp; illustrative properties — not actual listings</div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Aurelia Estates, home"><span class="brand-symbol" aria-hidden="true"><span></span></span><span class="brand-copy"><strong>AURELIA</strong><small>ESTATES</small></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#properties">Properties</a><a href="#approach">Our approach</a><a href="#journal">Journal</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact">Find your place <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobile-navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" hidden>
+      <a href="#properties">Explore properties</a><a href="#approach">Our approach</a><a href="#journal">Journal</a><a href="#contact">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <div class="hero-copy-inner">
+          <p class="eyebrow eyebrow-light"><span class="little-line"></span> MORE THAN AN ADDRESS</p>
+          <h1 id="hero-heading">Find a place <em>to belong.</em></h1>
+          <p class="hero-lead">Distinctive spaces. Thoughtful details. A fresh perspective on finding somewhere that feels entirely yours.</p>
+          <div class="hero-actions">
+            <a class="button button-cream" href="#properties">Explore the collection <span aria-hidden="true">↗</span></a>
+            <a class="text-link light-link" href="#approach">Discover our approach <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-bottom"><span class="tiny-sun" aria-hidden="true">✳</span><span>Spaces made for the way you live.</span></div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <span class="hero-art" role="img" aria-label="Contemporary architecture with warm lighting and lush landscaping"></span>
+        <div class="hero-photo-label"><span>Sample image</span><strong>Spaces worth discovering</strong><span class="hero-photo-arrow" aria-hidden="true">↗</span></div>
+      </div>
+    </section>
+
+    <section class="intro-band" aria-label="Our philosophy">
+      <div class="container intro-inner"><p>THE ART OF LIVING WELL</p><p>We believe a home is not simply where you live. <em>It's how you feel.</em></p><span class="intro-star" aria-hidden="true">✳</span></div>
+    </section>
+
+    <section class="properties-section section-space" id="properties" aria-labelledby="properties-heading">
+      <div class="container">
+        <div class="section-heading property-heading">
+          <div><p class="eyebrow"><span class="little-line"></span> THE COLLECTION</p><h2 id="properties-heading">Homes with <em>character.</em></h2></div>
+          <p>Considered spaces, distinctive architecture, and room for what matters most. Discover a selection of illustrative residences.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter example properties">
+          <div class="filter-tabs" role="group" aria-label="Property type">
+            <button class="filter-tab is-active" type="button" data-type-filter="all" aria-pressed="true">All homes</button>
+            <button class="filter-tab" type="button" data-type-filter="villa" aria-pressed="false">Villas</button>
+            <button class="filter-tab" type="button" data-type-filter="apartment" aria-pressed="false">Apartments</button>
+          </div>
+          <div class="filter-selects">
+            <label class="select-wrap"><span class="sr-only">Filter by city</span><select id="city-filter"><option value="all">All locations</option><option value="Goa">Goa</option><option value="Gurugram">Gurugram</option><option value="Pune">Pune</option><option value="Bengaluru">Bengaluru</option></select><span class="select-chevron" aria-hidden="true">⌄</span></label>
+            <label class="select-wrap"><span class="sr-only">Filter by maximum price</span><select id="price-filter"><option value="all">Any price</option><option value="150">Up to ₹1.5 Cr</option><option value="250">Up to ₹2.5 Cr</option><option value="350">Up to ₹3.5 Cr</option><option value="500">Up to ₹5 Cr</option></select><span class="select-chevron" aria-hidden="true">⌄</span></label>
+          </div>
+        </div>
+        <div class="results-line"><div class="results-main"><p id="results-count" role="status" aria-live="polite">Showing 6 sample homes</p><button type="button" class="clear-inline" id="clear-filters" hidden>Clear filters</button></div><span>All listings and prices are fictional examples.</span></div>
+
+        <div class="property-grid" id="property-grid">
+          <article class="property-card" data-type="villa" data-city="Goa" data-price="380" data-id="palm">
+            <div class="property-image-wrap"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;q=80&amp;w=900" srcset="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;q=80&amp;w=450 450w, https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;q=80&amp;w=675 675w, https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;q=80&amp;w=900 900w" sizes="(max-width:430px) 100vw,(max-width:950px) 50vw,410px" width="900" height="762" decoding="async" alt="Modern villa with glass walls, warm interior light and a landscaped garden" loading="lazy"><span class="image-tag">VILLA</span><button class="round-arrow" type="button" data-detail="palm" aria-hidden="true" tabindex="-1">↗</button></div>
+            <div class="property-content"><div class="property-meta">GOA <span>·</span> 4 BEDS <span>·</span> 3 BATHS</div><div class="property-title-line"><h3>The Palm House</h3><strong>₹3.8 Cr</strong></div><p>An effortless balance of warmth, openness and contemporary design.</p><button class="property-link" data-detail="palm" type="button">View residence <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="property-card" data-type="apartment" data-city="Gurugram" data-price="225" data-id="indigo">
+            <div class="property-image-wrap"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=80&amp;w=900" srcset="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=80&amp;w=450 450w, https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=80&amp;w=675 675w, https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=80&amp;w=900 900w" sizes="(max-width:430px) 100vw,(max-width:950px) 50vw,410px" width="900" height="762" decoding="async" alt="Elegant bright living room with modern furniture and timber accents" loading="lazy"><span class="image-tag">APARTMENT</span><button class="round-arrow" type="button" data-detail="indigo" aria-hidden="true" tabindex="-1">↗</button></div>
+            <div class="property-content"><div class="property-meta">GURUGRAM <span>·</span> 3 BEDS <span>·</span> 2 BATHS</div><div class="property-title-line"><h3>Indigo Residence</h3><strong>₹2.25 Cr</strong></div><p>Light-filled interiors curated for calm, connected city living.</p><button class="property-link" data-detail="indigo" type="button">View residence <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="property-card" data-type="villa" data-city="Pune" data-price="320" data-id="terrace">
+            <div class="property-image-wrap"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;q=80&amp;w=900" srcset="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;q=80&amp;w=450 450w, https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;q=80&amp;w=675 675w, https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;q=80&amp;w=900 900w" sizes="(max-width:430px) 100vw,(max-width:950px) 50vw,410px" width="900" height="762" decoding="async" alt="Contemporary white two-storey home beside a swimming pool" loading="lazy"><span class="image-tag">VILLA</span><button class="round-arrow" type="button" data-detail="terrace" aria-hidden="true" tabindex="-1">↗</button></div>
+            <div class="property-content"><div class="property-meta">PUNE <span>·</span> 4 BEDS <span>·</span> 4 BATHS</div><div class="property-title-line"><h3>Terrace House</h3><strong>₹3.2 Cr</strong></div><p>Striking architecture and generous space to make your own.</p><button class="property-link" data-detail="terrace" type="button">View residence <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="property-card" data-type="apartment" data-city="Bengaluru" data-price="140" data-id="atelier">
+            <div class="property-image-wrap"><img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&amp;fit=crop&amp;q=80&amp;w=900" srcset="https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&amp;fit=crop&amp;q=80&amp;w=450 450w, https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&amp;fit=crop&amp;q=80&amp;w=675 675w, https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&amp;fit=crop&amp;q=80&amp;w=900 900w" sizes="(max-width:430px) 100vw,(max-width:950px) 50vw,410px" width="900" height="762" decoding="async" alt="Bright modern lounge with large windows overlooking greenery" loading="lazy"><span class="image-tag">APARTMENT</span><button class="round-arrow" type="button" data-detail="atelier" aria-hidden="true" tabindex="-1">↗</button></div>
+            <div class="property-content"><div class="property-meta">BENGALURU <span>·</span> 2 BEDS <span>·</span> 2 BATHS</div><div class="property-title-line"><h3>Atelier Apartment</h3><strong>₹1.4 Cr</strong></div><p>Quiet comfort with a sophisticated, open-plan sensibility.</p><button class="property-link" data-detail="atelier" type="button">View residence <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="property-card" data-type="villa" data-city="Goa" data-price="470" data-id="grove">
+            <div class="property-image-wrap"><img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&amp;fit=crop&amp;q=80&amp;w=900" srcset="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&amp;fit=crop&amp;q=80&amp;w=450 450w, https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&amp;fit=crop&amp;q=80&amp;w=675 675w, https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&amp;fit=crop&amp;q=80&amp;w=900 900w" sizes="(max-width:430px) 100vw,(max-width:950px) 50vw,410px" width="900" height="762" decoding="async" alt="Architectural residence with a shaded veranda and garden" loading="lazy"><span class="image-tag">VILLA</span><button class="round-arrow" type="button" data-detail="grove" aria-hidden="true" tabindex="-1">↗</button></div>
+            <div class="property-content"><div class="property-meta">GOA <span>·</span> 5 BEDS <span>·</span> 4 BATHS</div><div class="property-title-line"><h3>The Grove</h3><strong>₹4.7 Cr</strong></div><p>Expansive spaces meet the serenity of green surroundings.</p><button class="property-link" data-detail="grove" type="button">View residence <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="property-card" data-type="apartment" data-city="Pune" data-price="195" data-id="haven">
+            <div class="property-image-wrap"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;q=80&amp;w=900" srcset="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;q=80&amp;w=450 450w, https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;q=80&amp;w=675 675w, https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;q=80&amp;w=900 900w" sizes="(max-width:430px) 100vw,(max-width:950px) 50vw,410px" width="900" height="762" decoding="async" alt="Contemporary living room with blue furnishings and sculptural timber staircase" loading="lazy"><span class="image-tag">APARTMENT</span><button class="round-arrow" type="button" data-detail="haven" aria-hidden="true" tabindex="-1">↗</button></div>
+            <div class="property-content"><div class="property-meta">PUNE <span>·</span> 3 BEDS <span>·</span> 2 BATHS</div><div class="property-title-line"><h3>Haven Loft</h3><strong>₹1.95 Cr</strong></div><p>A quietly expressive interior with space to settle into.</p><button class="property-link" data-detail="haven" type="button">View residence <span aria-hidden="true">↗</span></button></div>
+          </article>
+        </div>
+        <div id="no-results" class="no-results" hidden><span aria-hidden="true">⌕</span><h3>No sample homes match</h3><p>Try a different city, property type or price range.</p><button type="button" id="reset-filters" class="button button-dark">Clear all filters <span aria-hidden="true">↗</span></button></div>
+      </div>
+    </section>
+
+    <section class="approach-section" id="approach" aria-labelledby="approach-heading">
+      <div class="approach-picture"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=80&amp;w=1200" srcset="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=80&amp;w=600 600w, https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=80&amp;w=900 900w, https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;q=80&amp;w=1200 1200w" sizes="(max-width:700px) 100vw,50vw" width="1200" height="1000" decoding="async" alt="Thoughtfully designed living area with warm wood and natural light" loading="lazy"><span class="vertical-caption">A NEW PERSPECTIVE ON HOME</span></div>
+      <div class="approach-content"><p class="eyebrow eyebrow-light"><span class="little-line"></span> THE AURELIA APPROACH</p><h2 id="approach-heading">Less searching.<br><em>More feeling.</em></h2><p class="approach-lead">Finding your place should feel less like a checklist and more like a discovery. We imagine a more intentional way to explore the spaces that matter.</p>
+        <div class="approach-points"><div><span>01</span><div><h3>Curated, not crowded.</h3><p>A thoughtful collection focused on design, lifestyle and livability.</p></div></div><div><span>02</span><div><h3>Spaces with a story.</h3><p>Look beyond square footage and imagine the moments a home can hold.</p></div></div><div><span>03</span><div><h3>Guidance with clarity.</h3><p>A concept built around simple information and confident decisions.</p></div></div></div>
+        <a href="#contact" class="text-link light-link">Start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="journal-section section-space" id="journal" aria-labelledby="journal-heading"><div class="container"><div class="section-heading"><div><p class="eyebrow"><span class="little-line"></span> THE JOURNAL</p><h2 id="journal-heading">Ideas for <em>living.</em></h2></div><p>A little inspiration for spaces that invite you to slow down, connect, and feel at home.</p></div><div class="journal-grid"><article class="journal-feature"><div class="journal-photo"><img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" srcset="https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&amp;fit=crop&amp;q=80&amp;w=500 500w, https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&amp;fit=crop&amp;q=80&amp;w=750 750w, https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&amp;fit=crop&amp;q=80&amp;w=1000 1000w" sizes="(max-width:700px) 100vw,(max-width:1180px) 50vw,620px" width="1000" height="658" decoding="async" loading="lazy" alt="Sunlit living room with warm wood finishes"></div><div class="journal-label">DESIGN NOTES <span>·</span> 4 MIN READ</div><h3>The beauty of spaces that breathe.</h3><p>Light, natural textures and a little extra room to be yourself.</p></article><article class="journal-feature"><div class="journal-photo"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" srcset="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;q=80&amp;w=500 500w, https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;q=80&amp;w=750 750w, https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;q=80&amp;w=1000 1000w" sizes="(max-width:700px) 100vw,(max-width:1180px) 50vw,620px" width="1000" height="658" decoding="async" loading="lazy" alt="Airy interior lounge with a sculptural staircase"></div><div class="journal-label">A BETTER HOME <span>·</span> 3 MIN READ</div><h3>Details that turn a house into a home.</h3><p>Why the most meaningful spaces are shaped around everyday rituals.</p></article></div><p class="journal-note">Journal previews are illustrative content for this portfolio website.</p></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="container contact-layout"><div class="contact-copy"><p class="eyebrow eyebrow-light"><span class="little-line"></span> LET'S TALK ABOUT HOME</p><h2 id="contact-heading">Something wonderful <em>starts here.</em></h2><p>Have a place in mind? Tell us what you're looking for and explore how a real estate enquiry experience could feel.</p><div class="contact-quote">“A home should give you the feeling of being exactly where you belong.”</div><div class="contact-note">This is a demonstration. No agent receives your message and no details are sent or saved.</div></div>
+      <form class="inquiry-form" id="inquiry-form" novalidate><div class="form-heading"><h3>Your next chapter</h3><p>Try the interactive enquiry form.</p><span class="demo-badge">Demo mode: nothing is sent or saved</span></div><div class="form-two"><div class="field"><label for="name">Your name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required minlength="2" aria-describedby="name-error"><small class="field-error" id="name-error"></small></div><div class="field"><label for="email">Email address <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required inputmode="email" aria-describedby="email-error"><small class="field-error" id="email-error"></small></div></div><div class="field"><label for="phone">Phone number <span class="optional">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="+91 00000 00000" aria-describedby="phone-error"><small class="field-error" id="phone-error"></small></div><div class="form-two"><div class="field"><label for="interest">Interested in</label><select id="interest" name="interest"><option value="">Exploring options</option><option value="The Palm House">The Palm House</option><option value="Indigo Residence">Indigo Residence</option><option value="Terrace House">Terrace House</option><option value="Atelier Apartment">Atelier Apartment</option><option value="The Grove">The Grove</option><option value="Haven Loft">Haven Loft</option></select></div><div class="field"><label for="location">Preferred location</label><select id="location" name="location"><option value="">Any location</option><option>Goa</option><option>Gurugram</option><option>Pune</option><option>Bengaluru</option></select></div></div><div class="field"><label for="message">Tell us more</label><textarea id="message" name="message" rows="4" maxlength="500" placeholder="The kind of place you're imagining..."></textarea></div><button class="button button-dark submit-button" type="submit">Preview enquiry <span aria-hidden="true">↗</span></button><p class="form-hint">Demo only. Submitting shows a confirmation on this page. Nothing is transmitted, no agent is contacted and the fields are cleared afterwards.</p><div id="form-feedback" class="form-feedback" role="status" aria-live="polite" hidden></div></form>
+    </div></section>
+
+    <section class="closing-bar"><div class="container closing-inner"><span aria-hidden="true">✳</span><p>Find the extraordinary <em>in the everyday.</em></p><a href="#top" aria-label="Back to top">↑</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#top"><span class="brand-symbol" aria-hidden="true"><span></span></span><span class="brand-copy"><strong>AURELIA</strong><small>ESTATES</small></span></a><p>A fictional real estate website concept, created to showcase design and frontend development.</p></div><div><strong>EXPLORE</strong><a href="#properties">Sample properties</a><a href="#approach">Our approach</a><a href="#journal">Journal</a></div><div><strong>GET IN TOUCH</strong><a href="#contact">Enquiry demo</a><a href="#top">Back to top ↑</a></div></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> Aurelia Estates · Portfolio concept</span><span>All brand, location and pricing details are illustrative. Photography from Unsplash.</span></div></footer>
+
+  <dialog class="property-dialog" id="property-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description"><div class="dialog-shell"><button class="dialog-close" type="button" aria-label="Close property details">×</button><div class="dialog-image-wrap"><img id="dialog-image" src="" alt=""></div><div class="dialog-copy"><p class="eyebrow" id="dialog-type">FEATURED RESIDENCE</p><h2 id="dialog-title">Property details</h2><p id="dialog-location" class="dialog-location"></p><p id="dialog-description"></p><div class="dialog-features"><span id="dialog-beds"></span><span id="dialog-baths"></span><strong id="dialog-price"></strong></div><p class="dialog-disclaimer">Illustrative concept listing. No property is available for sale through this demo.</p><button class="button button-dark" id="dialog-inquire" type="button">Try enquiry form <span aria-hidden="true">↗</span></button></div></div></dialog>
+</body>
+</html>
